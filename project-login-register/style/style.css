@@ -1,0 +1,64 @@
+html{
+    margin: 0;
+    height: 100%;
+    background-color: #8BBEE8FF;
+}
+
+body{
+    margin: 100px;
+}
+
+
+form{
+    height: 670px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login_pic{
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    margin-right: 70px;
+}
+
+#text{
+    height: 25px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    width: 40%;
+}
+
+#check{
+    margin: 20px;
+}
+
+#button{
+    padding: 10px;
+    width: 160px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(35, 38, 182);
+    border: none;
+    border-radius: 5px;
+}
+#button:hover{
+    background-color: rgb(80, 80, 192);
+}
+
+#box{
+    background-color: rgb(139, 170, 255);
+    margin: auto;
+    width: 65%;
+    height: fit-content;
+}
+
+#link{
+    text-decoration: underline;
+    border: 30px;
+}
+
+
