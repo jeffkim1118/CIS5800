@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/testingderek.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: .8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("images/driveway.jpg");
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+}
+
+.caption2 {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #3e6866;
+  color: #fff;
+  padding: 5px;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.caption2 span.border {
+  background-color: #3e6866;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+h1 {
+  letter-spacing: 5px;
+  font: 0px "Lato", verdana;
+  color: #111;
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><img src="images/Screenshot_2.png" style="width:100%" alt="Driveway for Rent"></h3>
+  </div>
+<div class="w3-bar-block">
+    <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="http://login.drivewayforent.com/login.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Login</a> 
+    <a href="http://login.drivewayforent.com/signup.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Register</a>
+    <a href="search.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Search for Driveways</a> 
+    <a href="http://login.drivewayforent.com/index.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Your profile</a>
+    <a href="support.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Support</a>
+    <a href="about_us.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+  </div>
+</nav> 
+
+<div class="bgimg-1">
+  <div class="caption">
+    <h1><span class="border">Welcome to Driveway for Rent!</span><br></h1>
+
+  </div>
+  <div class="caption2">
+      <h6><span class="border">Book a driveway instantly!</span><br></h6>
+    <h6><span class="border">It's only a few clicks away!</span><br></h6>
+    <h6><span class="border">Work in Progress</span><br></h6>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:0px;padding-right:58px"><p class="w3-right"><a href="https://sites.google.com/view/cis5800-team6/home" title="CIS 5800 Team 6 " target="_blank" class="w3-hover-opacity">CIS 5800 Team 6 </a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
